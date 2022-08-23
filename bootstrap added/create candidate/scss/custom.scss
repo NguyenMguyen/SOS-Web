@@ -1,0 +1,41 @@
+$primary: #C4C4C4;
+$secondary: #dedede;
+
+@import "header";
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary
+);
+@mixin myFont($size) {
+    font-family: 'Roboto';
+    font-size: $size !important;
+}
+.formname {
+    @include myFont(26px);
+}
+.partname {
+    @include myFont(20px);
+}
+label, button {
+    @include myFont(15px);
+}
+label {
+    margin: 18px 0px 12px 0px ;
+}
+.custom-container {
+    max-width: 540px;    
+}
+@media screen and (max-width: 576px) {
+    .custom-container {
+        width: 80%;
+    }
+}
+input, select {
+    width: 100%;
+    padding: 11px 20px;
+}
+input[type="file"] {
+    border: 1px dashed #000000;
+}
+

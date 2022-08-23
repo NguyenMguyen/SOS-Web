@@ -1,0 +1,18 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+a.navbar-brand {
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 31px;
+}
+a.nav-link {
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: rgba($color: #ffffff, $alpha: 0.5);
+    i {
+        font-size: 18px !important;
+        transform: translate(-5px, 3px);
+    }
+}
+

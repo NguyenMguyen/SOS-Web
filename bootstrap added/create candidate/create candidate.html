@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Candidate</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css\custom.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">Search of Skills</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse flex-row-reverse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item me-3">
+                    <a class="nav-link" href="#">
+                        <i class="material-icons">home</i>Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="material-icons">person</i>Administration
+                        <i class="material-icons" style="transform:translateY(5px);">arrow_drop_down</i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="custom-container mx-auto">
+              <div class="formname text-center pt-5 pb-4">Create Candidate</div>
+              <div class="partname">Personal information</div>
+              <div class="row">
+                  <div class="col-sm">
+                    <label for="fname">First Name</label>
+                    <input class="bg-primary border-0 bg-input" type="text" id="fname" name="fname">
+                  </div>
+                  <div class="col-sm">
+                    <label for="lname">Last Name</label>
+                    <input class="bg-primary border-0" type="text" id="lname" name="lname">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm">
+                    <label for="birthyear">Birth Year</label>
+                    <input class="bg-primary border-0" type="number" id="birthyear" name="birthyear" placeholder="_ _ _ _">
+                  </div>
+                  <div class="col-sm">
+                    <label for="pernumber">Personal Number</label>
+                    <input class="bg-primary border-0" type="tel" id="pernumber" name="pernumber">
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                    <label for="gender">Gender</label>
+                    <input class="bg-primary border-0" type="text" id="gender" name="gender">
+                </div>
+                <div class="col-sm">
+                    <label for="region">Region</label>
+                    <input class="bg-primary border-0" type="text" id="region" name="region">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                    <label for="Country">Country</label>
+                    <input class="bg-primary border-0" type="text" id="country" name="country">
+                </div>
+                <div class="col-sm">
+                    <label for="linkedln">Linkedln Link</label>
+                    <input class="bg-primary border-0" type="url" id="linkedln" name="linkedln">
+                </div>
+              </div>
+
+              <div class="partname mt-3 pt-3">Candidate</div>
+              <label for="employer">Employer</label>
+                <select class="bg-primary border-0" id="employer" name="employer">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label for="femploy">First Employment</label>
+                <select class="bg-primary border-0" id="femploy" name="femploy">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <label for="manage">Managerial position</label>
+                <select class="bg-primary border-0" id="manage" name="manage">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <label for="business">Business areas</label>
+                <select class="bg-primary border-0" id="business" name="business">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <label for="cv">CVs</label>
+                <select class="bg-primary border-0" id="cv" name="cv">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <input class="bg-white mt-3 p-3" type="file" id="myfile" name="myfile" multiple>
+
+                <div class="partname mt-3 pt-3">Contact</div>
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="street">Street address</label>
+                        <input class="bg-primary border-0" type="text" id="street" name="street">
+                    </div>
+                    <div class="col-sm">
+                        <label for="zipcode">Zip code</label>
+                        <input class="bg-primary border-0" type="text" id="zipcode" name="zipcode">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="city">City</label>
+                        <input class="bg-primary border-0" type="text" id="city" name="city">
+                    </div>
+                    <div class="col-sm">
+                        <label for="phonenumber">Phone number</label>
+                        <input class="bg-primary border-0" type="number" id="phonenumber" name="phonenumber">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="emailpri">Email private</label>
+                        <input class="bg-primary border-0" type="email" id="emailpri" name="emailpri">
+                    </div>
+                    <div class="col-sm">
+                        <label for="emailwork">Email work</label>
+                        <input class="bg-primary border-0" type="email" id="emailwork" name="emailwork">
+                    </div>
+                </div>
+                <div class="row mt-5 mb-5">
+                  <div class="col">
+                    <button class="btn btn-secondary" style="float: right;">Cancel</button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-secondary">Create</button>
+                  </div>
+                </div>
+            </div>
+    </body>
+</html>
